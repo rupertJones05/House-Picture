@@ -2,6 +2,7 @@ import java.awt.*;
 
 public class Square
 {
+    private int size2;
     private int size;
     private int xPosition;
     private int yPosition;
@@ -13,6 +14,7 @@ public class Square
      */
     public Square()
     {
+        size2 = 70;
         size = 60;
         xPosition = 310;
         yPosition = 120;
@@ -147,7 +149,12 @@ public class Square
         size = newSize;
         draw();
     }
-
+    public void changeSize2(int newSize2)
+    {
+        erase();
+        size2 = newSize2;
+        draw();
+    }
     /**
      * Change the color. Valid colors are "red", "yellow", "blue", "green",
      * "magenta" and "black".
@@ -166,7 +173,7 @@ public class Square
         if(isVisible) {
             Canvas canvas = Canvas.getCanvas();
             canvas.draw(this, color,
-                    new Rectangle(xPosition, yPosition, size, size));
+                    new Rectangle(xPosition, yPosition, size, size2));
             canvas.wait(10);
         }
     }
