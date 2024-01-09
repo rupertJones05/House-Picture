@@ -29,9 +29,9 @@ public class Picture
     public void draw()
     {
         if(!drawn) {
-            wall.moveHorizontal(-140);
-            wall.moveVertical(40);
-            wall.changeSize(120);
+            wall.moveHorizontal(-150);
+            wall.moveVertical(50);
+            wall.changeSize(140);
             wall.makeVisible();
 
             window.changeColor("black");
