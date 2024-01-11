@@ -226,13 +226,61 @@ public class Picture
             whiteWall4.changeSize2(110);
             whiteWall4.makeVisible();
 
+            Square wall3 = new Square ();
+            wall3.changeColor("light blue");
+            wall3.moveHorizontal(60);
+            wall3.moveVertical(25);
+            wall3.changeSize(110);
+            wall3.changeSize2(110);
+            wall3.makeVisible();
+
+            Square pillar1 = new Square();
+            pillar1.changeColor("white");
+            pillar1.moveHorizontal(67);
+            pillar1.moveVertical(25);
+            pillar1.changeSize(15);
+            pillar1.changeSize2(110);
+            pillar1.makeVisible();
+
+            Square pillar2 = new Square();
+            pillar2.changeColor("white");
+            pillar2.moveHorizontal(158);
+            pillar2.moveVertical(25);
+            pillar2.changeSize(15);
+            pillar2.changeSize2(110);
+            pillar2.makeVisible();
+
             Square brickwall2 = new Square();
             brickwall2.changeColor("dark gray");
-            brickwall2.moveHorizontal(70);
-            brickwall2.moveVertical(95);
-            brickwall2.changeSize(29 );
+            brickwall2.moveHorizontal(64);
+            brickwall2.moveVertical(105);
+            brickwall2.changeSize(20 );
             brickwall2.changeSize2(40);
             brickwall2.makeVisible();
+
+            Square brickwall3 = new Square();
+            brickwall3.changeColor("dark gray");
+            brickwall3.moveHorizontal(155);
+            brickwall3.moveVertical(105);
+            brickwall3.changeSize(20 );
+            brickwall3.changeSize2(40);
+            brickwall3.makeVisible();
+
+            Square windowborder = new Square();
+            windowborder.changeColor("white");
+            windowborder.moveHorizontal(96);
+            windowborder.moveVertical(39);
+            windowborder.changeSize(48 );
+            windowborder.changeSize2(53);
+            windowborder.makeVisible();
+
+            Square window2 = new Square();
+            window2.changeColor("glass");
+            window2.moveHorizontal(98);
+            window2.moveVertical(40);
+            window2.changeSize(45 );
+            window2.changeSize2(50);
+            window2.makeVisible();
 
             door.changeColor("aqua blue");
             door.moveHorizontal(20);
