@@ -1,22 +1,47 @@
 public class Picture
 {
-    private Square wall3;
+
     private Square grass;
     private Square background;
     private Square wall;
-    private Square wall2;
+    private Square garage1Window;
     private Square window;
     private Triangle roof;
     private Circle sun;
     private boolean drawn;
+    private Triangle driveway;
+    private Square driveway1;
+    private Square whiteWall;
+    private Square garage1;
+    private Square windowBorder;
+    private Square windowBorder2;
+    private Square windowBorder3;
+    private Square brickwall;
+    private Square wall2;
+    private Square garage2;
+    private Square whiteWall2;
+    private Square whiteWall3;
+    private Square garage2Window;
+    private Square garage2Window2;
+    private Square window2Border;
+    private Square window2Border2;
+    private Square door;
+    private Square sidewalkBorder;
+    private Square road;
+    private Circle doorknob;
+    private Square doorglass;
+    private Square doorwindowborder;
+    private Square doorwindowborder2;
+    private Square window1;
 
     /**
      * Constructor for objects of class Picture
      */
     public Picture()
     {
-        wall3 = new Square();
-        wall2 = new Square();
+        whiteWall = new Square();
+        driveway1 = new Square();
+        driveway = new Triangle();
         grass = new Square();
         wall = new Square();
         window = new Square();
@@ -24,6 +49,30 @@ public class Picture
         sun = new Circle();
         drawn = false;
         background = new Square();
+        garage1 = new Square();
+        garage1Window = new Square();
+        windowBorder = new Square();
+        windowBorder2 = new Square();
+        windowBorder3 = new Square();
+        brickwall = new Square();
+        wall2 = new Square();
+        garage2 = new Square();
+        whiteWall2 = new Square();
+        whiteWall3 = new Square();
+        garage2Window = new Square();
+        garage2Window2 = new Square();
+        window2Border = new Square();
+        window2Border2 = new Square();
+        door = new Square();
+        sidewalkBorder = new Square();
+        road = new Square();
+        doorknob = new Circle();
+        doorglass = new Square();
+        doorwindowborder = new Square();
+        doorwindowborder2 = new Square();
+        window1 = new Square();
+
+
     }
 
     public static void main(String[] args) {
@@ -37,7 +86,7 @@ public class Picture
     public void draw()
     {
         if(!drawn) {
-            background.changeColor("blue");
+            background.changeColor("sky blue");
             background.moveHorizontal(-500);
             background.moveVertical(-500);
             background.changeSize(1000);
@@ -51,45 +100,198 @@ public class Picture
             grass.changeSize2(1000);
             grass.makeVisible();
 
-            wall.changeColor("white");
-            wall.moveHorizontal(-180);
+            driveway.changeColor("gray");
+            driveway.moveHorizontal(-140);
+            driveway.moveVertical(112);
+            driveway.changeSize(140, 425);
+            driveway.makeVisible();
+
+            driveway1.changeColor("gray");
+            driveway1.moveHorizontal(-240);
+            driveway1.moveVertical(131);
+            driveway1.changeSize(260);
+            driveway1.changeSize2(100);
+            driveway1.makeVisible();
+
+            road.changeColor("road");
+            road.moveHorizontal(-310);
+            road.moveVertical(160);
+            road.changeSize(500);
+            road.changeSize2(100);
+            road.makeVisible();
+
+            sidewalkBorder.changeColor("sidewalk border");
+            sidewalkBorder.moveHorizontal(-310);
+            sidewalkBorder.moveVertical(160);
+            sidewalkBorder.changeSize(500);
+            sidewalkBorder.changeSize2(5);
+            sidewalkBorder.makeVisible();
+
+            whiteWall.changeColor("white");
+            whiteWall.moveHorizontal(-220);
+            whiteWall.moveVertical(25);
+            whiteWall.changeSize(90 );
+            whiteWall.changeSize2(110);
+            whiteWall.makeVisible();
+
+            garage1.changeColor("dark blue");
+            garage1.moveHorizontal(-212);
+            garage1.moveVertical(30);
+            garage1.changeSize(75 );
+            garage1.changeSize2(105);
+            garage1.makeVisible();
+
+            wall.changeColor("light blue");
+            wall.moveHorizontal(-240);
             wall.moveVertical(25);
-            wall.changeSize(25 );
-            wall.changeSize2(100);
+            wall.changeSize(20 );
+            wall.changeSize2(110);
             wall.makeVisible();
 
-            wall2.changeColor("white");
-            wall2.moveHorizontal(-80);
+            wall2.changeColor("light blue");
+            wall2.moveHorizontal(-130);
             wall2.moveVertical(25);
-            wall2.changeSize(25);
-            wall2.changeSize2(100);
+            wall2.changeSize(150 );
+            wall2.changeSize2(110);
             wall2.makeVisible();
 
-            wall3.changeColor("white");
-            wall3.moveHorizontal(-180);
-            wall3.moveVertical(10);
-            wall3.changeSize(125);
-            wall3.changeSize2(20);
-            wall3.makeVisible();
+            whiteWall2.changeColor("white");
+            whiteWall2.moveHorizontal(-100);
+            whiteWall2.moveVertical(25);
+            whiteWall2.changeSize(120);
+            whiteWall2.changeSize2(110);
+            whiteWall2.makeVisible();
 
-            window.changeColor("black");
-            window.moveHorizontal(-120);
-            window.moveVertical(40);
-            window.changeSize(40);
-            window.changeSize2(40);
-            window.makeVisible();
+            brickwall.changeColor("dark gray");
+            brickwall.moveHorizontal(-130);
+            brickwall.moveVertical(95);
+            brickwall.changeSize(29 );
+            brickwall.changeSize2(40);
+            brickwall.makeVisible();
 
-            roof.changeSize(60, 180);
-            roof.moveHorizontal(20);
-            roof.moveVertical(-60);
-            roof.makeVisible();
+            garage2.changeColor("dark blue");
+            garage2.moveHorizontal(-94);
+            garage2.moveVertical(30);
+            garage2.changeSize(107 );
+            garage2.changeSize2(105);
+            garage2.makeVisible();
 
-            sun.changeColor("yellow");
-            sun.moveHorizontal(100);
-            sun.moveVertical(-40);
-            sun.changeSize(80);
-            sun.makeVisible();
+            garage2Window.changeColor("glass");
+            garage2Window.moveHorizontal(-85);
+            garage2Window.moveVertical(37);
+            garage2Window.changeSize(40);
+            garage2Window.changeSize2(18);
+            garage2Window.makeVisible();
+
+            garage2Window2.changeColor("glass");
+            garage2Window2.moveHorizontal(-35);
+            garage2Window2.moveVertical(37);
+            garage2Window2.changeSize(40);
+            garage2Window2.changeSize2(18);
+            garage2Window2.makeVisible();
+
+            window2Border.changeColor("dark blue");
+            window2Border.moveHorizontal(-67);
+            window2Border.moveVertical(37);
+            window2Border.changeSize(3);
+            window2Border.changeSize2(20);
+            window2Border.makeVisible();
+
+            window2Border2.changeColor("dark blue");
+            window2Border2.moveHorizontal(-17);
+            window2Border2.moveVertical(37);
+            window2Border2.changeSize(3);
+            window2Border2.changeSize2(20);
+            window2Border2.makeVisible();
+
+            garage1Window.changeColor("glass");
+            garage1Window.moveHorizontal(-204);
+            garage1Window.moveVertical(37);
+            garage1Window.changeSize(60);
+            garage1Window.changeSize2(18);
+            garage1Window.makeVisible();
+
+            whiteWall3.changeColor("white");
+            whiteWall3.moveHorizontal(20);
+            whiteWall3.moveVertical(25);
+            whiteWall3.changeSize(65);
+            whiteWall3.changeSize2(105);
+            whiteWall3.makeVisible();
+
+            Square whiteWall4 = new Square();
+            whiteWall4.changeColor("white");
+            whiteWall4.moveHorizontal(70);
+            whiteWall4.moveVertical(25);
+            whiteWall4.changeSize(65);
+            whiteWall4.changeSize2(110);
+            whiteWall4.makeVisible();
+
+            Square brickwall2 = new Square();
+            brickwall2.changeColor("dark gray");
+            brickwall2.moveHorizontal(70);
+            brickwall2.moveVertical(95);
+            brickwall2.changeSize(29 );
+            brickwall2.changeSize2(40);
+            brickwall2.makeVisible();
+
+            door.changeColor("aqua blue");
+            door.moveHorizontal(20);
+            door.moveVertical(52);
+            door.changeSize(35);
+            door.changeSize2(75);
+            door.makeVisible();
+
+
+
+            doorglass.changeColor("glass");
+            doorglass.moveHorizontal(27);
+            doorglass.moveVertical(58);
+            doorglass.changeSize(20);
+            doorglass.changeSize2(16);
+            doorglass.makeVisible();
+
+            doorwindowborder.changeColor("aqua blue");
+            doorwindowborder.moveHorizontal(35);
+            doorwindowborder.moveVertical(58);
+            doorwindowborder.changeSize(3);
+            doorwindowborder.changeSize2(20);
+            doorwindowborder.makeVisible();
+
+            doorwindowborder2.changeColor("aqua blue");
+            doorwindowborder2.moveHorizontal(27);
+            doorwindowborder2.moveVertical(64);
+            doorwindowborder2.changeSize(20);
+            doorwindowborder2.changeSize2(3);
+            doorwindowborder2.makeVisible();
+
+            windowBorder.changeColor("dark blue");
+            windowBorder.moveHorizontal(-176);
+            windowBorder.moveVertical(37);
+            windowBorder.changeSize(3);
+            windowBorder.changeSize2(20);
+            windowBorder.makeVisible();
+
+            windowBorder2.changeColor("dark blue");
+            windowBorder2.moveHorizontal(-192);
+            windowBorder2.moveVertical(37);
+            windowBorder2.changeSize(3);
+            windowBorder2.changeSize2(20);
+            windowBorder2.makeVisible();
+
+            windowBorder3.changeColor("dark blue");
+            windowBorder3.moveHorizontal(-160);
+            windowBorder3.moveVertical(37);
+            windowBorder3.changeSize(3);
+            windowBorder3.changeSize2(20);
+            windowBorder3.makeVisible();
+
+            doorknob.changeColor("yellow");
+            doorknob.moveHorizontal(120);
+            doorknob.moveVertical(115);
+            doorknob.changeSize(10);
+            doorknob.makeVisible();
             drawn = true;
+
         }
     }
 

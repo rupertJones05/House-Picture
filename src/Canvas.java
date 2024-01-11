@@ -118,8 +118,8 @@ public class Canvas
         else if(colorString.equals("black")) {
             graphic.setColor(Color.black);
         }
-        else if(colorString.equals("blue")) {
-            graphic.setColor(new Color(30, 75, 220));
+        else if(colorString.equals("sky blue")) {
+            graphic.setColor(new Color(90, 201, 255));
         }
         else if(colorString.equals("yellow")) {
             graphic.setColor(new Color(255, 230, 0));
@@ -127,11 +127,38 @@ public class Canvas
         else if(colorString.equals("green")) {
             graphic.setColor(new Color(80, 160, 60));
         }
+        else if(colorString.equals("light blue")) {
+            graphic.setColor(new Color(149, 195, 215));
+        }
+        else if(colorString.equals("dark blue")) {
+            graphic.setColor(new Color(78, 112, 142));
+        }
+        else if(colorString.equals("gray")) {
+            graphic.setColor(new Color(197, 208, 215));
+        }
+        else if(colorString.equals("sidewalk border")) {
+            graphic.setColor(new Color(163, 163, 164));
+        }
+        else if(colorString.equals("dark gray")) {
+            graphic.setColor(new Color(102, 106, 110));
+        }
+        else if(colorString.equals("road")) {
+            graphic.setColor(new Color(64, 64, 64));
+        }
+        else if(colorString.equals("aqua blue")) {
+            graphic.setColor(new Color(9, 89, 129));
+        }
+        else if(colorString.equals("secondary blue")) {
+            graphic.setColor(new Color(111, 150, 185));
+        }
         else if(colorString.equals("magenta")) {
             graphic.setColor(Color.magenta);
         }
         else if(colorString.equals("white")) {
             graphic.setColor(Color.white);
+        }
+        else if(colorString.equals("glass")) {
+            graphic.setColor(new Color(210,255, 255));
         }
         else {
             graphic.setColor(Color.black);
