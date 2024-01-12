@@ -32,7 +32,6 @@ public class Picture
     private Square doorglass;
     private Square doorwindowborder;
     private Square doorwindowborder2;
-    private Square window1;
 
     /**
      * Constructor for objects of class Picture
@@ -70,7 +69,6 @@ public class Picture
         doorglass = new Square();
         doorwindowborder = new Square();
         doorwindowborder2 = new Square();
-        window1 = new Square();
 
 
     }
@@ -250,6 +248,14 @@ public class Picture
             pillar2.changeSize2(110);
             pillar2.makeVisible();
 
+            Square walkway3 = new Square();
+            walkway3.changeColor("gray");
+            walkway3.moveHorizontal(60);
+            walkway3.moveVertical(135);
+            walkway3.changeSize(100);
+            walkway3.changeSize2(10);
+            walkway3.makeVisible();
+
             Square brickwall2 = new Square();
             brickwall2.changeColor("dark gray");
             brickwall2.moveHorizontal(64);
@@ -281,6 +287,170 @@ public class Picture
             window2.changeSize(45 );
             window2.changeSize2(50);
             window2.makeVisible();
+
+            Square windowborder2 = new Square();
+            windowborder2.changeColor("white");
+            windowborder2.moveHorizontal(119);
+            windowborder2.moveVertical(39);
+            windowborder2.changeSize(3);
+            windowborder2.changeSize2(53);
+            windowborder2.makeVisible();
+
+            Square windowborder3 = new Square();
+            windowborder3.changeColor("white");
+            windowborder3.moveHorizontal(100);
+            windowborder3.moveVertical(62);
+            windowborder3.changeSize(42);
+            windowborder3.changeSize2(3);
+            windowborder3.makeVisible();
+
+            Square roofborder = new Square();
+            roofborder.changeColor("white");
+            roofborder.moveHorizontal(-252);
+            roofborder.moveVertical(20);
+            roofborder.changeSize(440);
+            roofborder.changeSize2(5);
+            roofborder.makeVisible();
+
+            Triangle triangleroof = new Triangle();
+            triangleroof.changeColor("secondary blue");
+            triangleroof.moveHorizontal(-3);
+            triangleroof.moveVertical(-330);
+            triangleroof.changeSize(330, 300);
+            triangleroof.makeVisible();
+
+            Triangle triangleroof2 = new Triangle();
+            triangleroof2.changeColor("secondary blue");
+            triangleroof2.moveHorizontal(138);
+            triangleroof2.moveVertical(-330);
+            triangleroof2.changeSize(330, 300);
+            triangleroof2.makeVisible();
+
+            Square secondstorywall = new Square();
+            secondstorywall.changeColor("light blue");
+            secondstorywall.moveHorizontal(-130);
+            secondstorywall.moveVertical(-105);
+            secondstorywall.changeSize(80);
+            secondstorywall.changeSize2(100);
+            secondstorywall.makeVisible();
+
+            Square windowborder4 = new Square();
+            windowborder4.changeColor("white");
+            windowborder4.moveHorizontal(-112);
+            windowborder4.moveVertical(-52);
+            windowborder4.changeSize(44 );
+            windowborder4.changeSize2(39);
+            windowborder4.makeVisible();
+
+            Square window3 = new Square();
+            window3.changeColor("glass");
+            window3.moveHorizontal(-110);
+            window3.moveVertical(-50);
+            window3.changeSize(40 );
+            window3.changeSize2(35);
+            window3.makeVisible();
+
+            Square windowborder6 = new Square();
+            windowborder6.changeColor("white");
+            windowborder6.moveHorizontal(-92);
+            windowborder6.moveVertical(-52);
+            windowborder6.changeSize(4 );
+            windowborder6.changeSize2(39);
+            windowborder6.makeVisible();
+
+            Square windowborder7 = new Square();
+            windowborder7.changeColor("white");
+            windowborder7.moveHorizontal(-110);
+            windowborder7.moveVertical(-36);
+            windowborder7.changeSize(40 );
+            windowborder7.changeSize2(4);
+            windowborder7.makeVisible();
+
+            Square secondstorywall2 = new Square();
+            secondstorywall2.changeColor("light blue");
+            secondstorywall2.moveHorizontal(-50);
+            secondstorywall2.moveVertical(-100);
+            secondstorywall2.changeSize(80);
+            secondstorywall2.changeSize2(100);
+            secondstorywall2.makeVisible();
+
+            Square windowborder5 = new Square();
+            windowborder5.changeColor("white");
+            windowborder5.moveHorizontal(-32);
+            windowborder5.moveVertical(-47);
+            windowborder5.changeSize(44 );
+            windowborder5.changeSize2(39);
+            windowborder5.makeVisible();
+
+            Square window4 = new Square();
+            window4.changeColor("glass");
+            window4.moveHorizontal(-30);
+            window4.moveVertical(-45);
+            window4.changeSize(40 );
+            window4.changeSize2(35);
+            window4.makeVisible();
+
+            Square windowborder8 = new Square();
+            windowborder8.changeColor("white");
+            windowborder8.moveHorizontal(-12);
+            windowborder8.moveVertical(-47);
+            windowborder8.changeSize(4 );
+            windowborder8.changeSize2(39);
+            windowborder8.makeVisible();
+
+            Square windowborder9 = new Square();
+            windowborder9.changeColor("white");
+            windowborder9.moveHorizontal(-30);
+            windowborder9.moveVertical(-31);
+            windowborder9.changeSize(40 );
+            windowborder9.changeSize2(4);
+            windowborder9.makeVisible();
+
+            Square background2 = new Square();
+            background2.changeColor("sky blue");
+            background2.moveHorizontal(-500);
+            background2.moveVertical(-1060);
+            background2.changeSize(1000);
+            background2.changeSize2(1000);
+            background2.makeVisible();
+
+            Triangle triangleroof5 = new Triangle();
+            triangleroof5.changeColor("secondary blue");
+            triangleroof5.moveHorizontal(50);
+            triangleroof5.moveVertical(-830);
+            triangleroof5.changeSize(750, 160);
+            triangleroof5.makeVisible();
+
+            Square background3 = new Square();
+            background3.changeColor("sky blue");
+            background3.moveHorizontal(-500);
+            background3.moveVertical(-1110);
+            background3.changeSize(1000);
+            background3.changeSize2(1000);
+            background3.makeVisible();
+
+            Triangle triangleroof3 = new Triangle();
+            triangleroof3.changeColor("white");
+            triangleroof3.moveHorizontal(49);
+            triangleroof3.moveVertical(-152);
+            triangleroof3.changeSize(75, 180);
+            triangleroof3.makeVisible();
+
+            Triangle walkway = new Triangle();
+            walkway.changeColor("gray");
+            walkway.moveHorizontal(160);
+            walkway.moveVertical(110);
+            walkway.changeSize(18, 10);
+            walkway.makeVisible();
+
+            Square walkway2 = new Square();
+            walkway2.changeColor("gray");
+            walkway2.moveHorizontal(20);
+            walkway2.moveVertical(130);
+            walkway2.changeSize(40);
+            walkway2.changeSize2(18);
+            walkway2.makeVisible();
+
 
             door.changeColor("aqua blue");
             door.moveHorizontal(20);
