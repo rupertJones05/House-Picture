@@ -149,7 +149,10 @@ public class Canvas
             graphic.setColor(new Color(9, 89, 129));
         }
         else if(colorString.equals("secondary blue")) {
-            graphic.setColor(new Color(111, 150, 185));
+            graphic.setColor(new Color(25, 43, 71));
+        }
+        else if(colorString.equals("another blue")) {
+            graphic.setColor(new Color(15, 26, 43));
         }
         else if(colorString.equals("magenta")) {
             graphic.setColor(Color.magenta);

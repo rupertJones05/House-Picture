@@ -430,7 +430,7 @@ public class Picture
             background3.makeVisible();
 
             Triangle triangleroof3 = new Triangle();
-            triangleroof3.changeColor("white");
+            triangleroof3.changeColor("another blue");
             triangleroof3.moveHorizontal(49);
             triangleroof3.moveVertical(-152);
             triangleroof3.changeSize(75, 180);
